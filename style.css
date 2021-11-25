@@ -1,0 +1,127 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  background-color: rgb(247, 247, 239);
+}
+.card-wrapper {
+  display: grid;
+  margin: 0 auto;
+  width: 48rem;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media screen and (max-width: 736px) {
+  .card-wrapper {
+    width: 34rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 552px) {
+  .card-wrapper {
+    width: 23rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.section-header {
+  grid-column: 1 / span 4;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-header-show-all {
+  text-decoration: none;
+  color: gray;
+  font-weight: 600;
+}
+.section-header-show-all:hover {
+  background-color: rgb(247, 247, 239);
+}
+.content {
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.3rem auto;
+  height: 17.5rem;
+  width: 11rem;
+}
+.cancel-icon {
+  position: absolute;
+  z-index: 2;
+  padding-left: 9.25rem;
+  padding-top: 0.25rem;
+  width: 1.5rem;
+  opacity: 0.25;
+}
+.header-pic {
+  height: 4rem;
+  width: 11rem;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card {
+  position: relative;
+  height: 100%;
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.profile-picture {
+  margin: 0 auto;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 100;
+}
+h2 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.25rem;
+}
+.job {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  color: gray;
+}
+
+.contacts {
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.same-contacts {
+  font-size: 0.75rem;
+  color: gray;
+}
+.same-contacts:before {
+  content: "";
+  display: block;
+  background: url("two_circles.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  color: gray;
+  float: left;
+  margin: 0 6px 0 0;
+}
+.connect-button {
+  background-color: white;
+  height: 2rem;
+  width: 100%;
+  margin: 0rem auto;
+  color: rgb(10, 102, 194);
+  font-size: 1rem;
+  font-weight: 400;
+  border: 2px solid rgb(10, 102, 194);
+  border-radius: 16px;
+}
